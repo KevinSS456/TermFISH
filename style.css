@@ -1,0 +1,151 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    position: relative;
+    padding: 0 5rem;
+    justify-content: left;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    height: 5rem;
+}
+.menu_bar{
+    outline: none;
+    background-color: white;
+    border: none;
+    color: #6a6a6a;
+    font-size: 1.5rem;
+    font-family: 'Yanone Kaffeesatz';
+    cursor: pointer;
+}
+.menu_bar:hover{
+    color: #c72828;
+    text-decoration: underline #c72828;
+    transition: 1s;
+}
+#logo{
+    font-family: "Francois One";
+    font-size: 3vw;
+    margin-top: 1.5rem;
+    color: #3e3e3e;
+}
+#icon{
+    margin-left: 38rem;
+}
+#menu{
+    margin: 0 4rem;
+}
+#header-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9rem;
+    height: 60vh;
+    
+}
+#title{
+    font-size: 7vw;
+    color: rgb(0, 0, 0);
+    font-family: "Yanone Kaffeesatz";
+    text-align: center;
+}
+#subtitle{
+    color: rgba(0, 0, 0, 0.784);
+    font-family: "Yanone Kaffeesatz";
+    font-size: 3vw;
+}
+
+header{
+    height: 100%;
+}
+header::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("assets/header.jpeg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.btn {
+	border: none;
+	font-family: 'Arial Black';
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 30px;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-weight: 800;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+h1{
+    margin-block-start: 0;
+    margin-block-end: 2rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+.btn-1 {
+	border: none;
+	color: #fff;
+	background-color: #c72828;
+
+}
+.btn-1c:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	
+}
+
+.btn-1c:hover,
+.btn-1c:active {
+    background: none;
+    transition: 0.5s;
+}
+
+.btn-1c:hover:after,
+.btn-1c:active:after {
+	width: 100%;
+    background-color: #333333;
+    transition: 1.2s;
+}
