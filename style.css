@@ -70,7 +70,7 @@ header::before{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 105%;
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,13 +149,13 @@ h1{
     background-color: #333333;
     transition: 1.2s;
 }
-
+/*Parte do meio*/
 #describle{
     display: grid;
     width: 100%;
-    grid-template-columns: 60% auto;
-    grid-template-rows: auto auto auto;
-    margin-top: 90px;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto;
+    margin-top: 8rem;
 }
 
 #item1Describle{
@@ -165,22 +165,91 @@ h1{
 }
 #item2Describle{
     grid-column-start: 2;
+    grid-column-end: 3;
     justify-self: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 #imgDescrible{
     width: 100%;
+    height: 650px;
+    object-fit: cover;
 }
 
 #titleDescrible{
-    width: 350px;
+    width: 500px;
     display: flex;
     font-size: 40px;
-    font-family: "Francois One";
     justify-content: center;
+    align-items: center;
     font-weight:300;
-    
     font-family: 'Yanone Kaffeesatz';
     color: #6a6a6a;
+}
+#ulDescrible{
+   list-style: none;
+   
+}
 
+.liDescrible{
+    margin-bottom: 10px;
+    font-family: "Francois One";
+    font-size: 20px;
+    font-weight: 200;
+    color: #6a6a6a;
+}
+#pay_now{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto;
+    margin-top: 90px;
+}
+#itemTermometro1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#itemTermometro2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 100%;
+}
+
+#termometroIMG{
+    width: 500px;
+    height: 450px;
+}
+#titleTermo{
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 80px;
+    color: #3e3e3e;
+    font-weight: 300;
+}
+#textTermo{
+    font-size: 25px;
+    color: #6a6a6a;
+}
+#precoTermo{
+    font-size: 35px;
+}
+#botaoTermo{
+    width: 300px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #333333;
+    text-align: center;
+    color: white;
 }
