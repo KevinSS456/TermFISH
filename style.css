@@ -149,3 +149,38 @@ h1{
     background-color: #333333;
     transition: 1.2s;
 }
+
+#describle{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60% auto;
+    grid-template-rows: auto auto auto;
+    margin-top: 90px;
+}
+
+#item1Describle{
+    border: #333333 1px solid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#item2Describle{
+    grid-column-start: 2;
+    justify-self: center;
+}
+
+#imgDescrible{
+    width: 100%;
+}
+
+#titleDescrible{
+    width: 350px;
+    display: flex;
+    font-size: 40px;
+    font-family: "Francois One";
+    justify-content: center;
+    font-weight:300;
+    
+    font-family: 'Yanone Kaffeesatz';
+    color: #6a6a6a;
+
+}
