@@ -66,7 +66,7 @@ header::before{
     content: "";
     display: block;
     position: absolute;
-    background-image: url("assets/header.jpeg");
+    background-image: url("../assets/header.jpeg");
     left: 0;
     top: 0;
     width: 100%;
@@ -159,7 +159,6 @@ h1{
 }
 
 #item1Describle{
-    border: #333333 1px solid;
     grid-column-start: 1;
     grid-column-end: 2;
 }
@@ -171,7 +170,6 @@ h1{
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 #imgDescrible{
@@ -181,38 +179,33 @@ h1{
 }
 
 #titleDescrible{
-    width: 500px;
-    display: flex;
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-    font-weight:300;
-    font-family: 'Yanone Kaffeesatz';
+    width: 580px;
+    font-size: 35px;
+    font-weight:200;
+    font-family: "Francois One";;
     color: #6a6a6a;
 }
 #ulDescrible{
    list-style: none;
-   
 }
 
 .liDescrible{
     margin-bottom: 10px;
-    font-family: "Francois One";
-    font-size: 20px;
-    font-weight: 200;
+    font-family:  "Yanone Kaffeesatz";
+    font-size: 30px;
     color: #6a6a6a;
 }
 #pay_now{
     display: grid;
     width: 100%;
     grid-template-columns: 50% auto;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     margin-top: 90px;
 }
 #itemTermometro1{
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-end: 1;
+    grid-row-end: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,23 +218,28 @@ h1{
     justify-self: center;
     width: 100%;
 }
-
 #termometroIMG{
     width: 500px;
     height: 450px;
 }
 #titleTermo{
-    font-family: 'Yanone Kaffeesatz';
+    font-family: "Francois One";
     font-size: 80px;
     color: #3e3e3e;
     font-weight: 300;
 }
 #textTermo{
-    font-size: 25px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 400px;
     color: #6a6a6a;
+    font-family:  "Yanone Kaffeesatz";
 }
 #precoTermo{
     font-size: 35px;
+    font-family: 'Arial';
+    font-weight: bold;
+    color: #333333;
 }
 #botaoTermo{
     width: 300px;
