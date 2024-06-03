@@ -47,31 +47,67 @@ nav{
     height: 60vh;
     
 }
-#title{
-    font-size: 7vw;
-    color: rgb(0, 0, 0);
-    font-family: "Yanone Kaffeesatz";
-    text-align: center;
+#conteinerForms{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% auto;
+    grid-template-rows: auto;
 }
-#subtitle{
-    color: rgba(0, 0, 0, 0.784);
-    font-family: "Yanone Kaffeesatz";
-    font-size: 3vw;
+#item-1-forms{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#headerforms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#titleForms{
+    font-size: 40px;
+    font-family: "Francois One";
+    letter-spacing: 12px;
+}
+#subtileForms{
+    color:#6a6a6a;
+    font-size: 15px;
+    font-family: 'Yanone Kaffeesatz';
+}
+#FormArea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.input{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #828282;
+    font-family: 'Yanone Kaffeesatz';
+}
+#textBox{
+    width: 400px;
+    height: 100px;
+    color: #828282;
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 16px;
+}
+#botãoEnviar{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
 }
 
-header{
-    height: 100%;
-}
-header::before{
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 105%;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
+#fotoForms{
+    width: 600px;
+    height: 600px;
 }

@@ -14,7 +14,6 @@
     <title>Termfish</title>
 </head>
 <body>
-<!--Header-->
 <header>
     <nav>
         <h1 id="logo">TermFISH</h1>
@@ -26,21 +25,23 @@
         </div>
     </nav>
 </header>
-<section>
+<section id="conteinerForms">
+    <div id="item-1-forms">
     <div id="headerforms">
-        <h1>Contate-nos</h1>
-        <p>Mande suas duvidas ou comentários para a nossa equipe!</p>
+        <h1 id="titleForms">Contate-nos</h1>
+        <p id="subtileForms">Mande suas duvidas ou comentários para a nossa equipe!</p>
     </div>
         <form action="" method="post" id="FormArea">
-            <label for="Nome">Nome:</label>
-            <input type="text" name="Nome" id="">
+            <label for="Nome">Nome Completo:</label>
+            <input type="text" name="Nome" class="input">
             <label for="email">Email:</label>
-            <input type="email" name="Email" required>
+            <input type="email" name="Email" class="input" required>
             <label for="question">Sua Pergunta</label>
-            <textarea name="question" id="" required></textarea>
-            <button type="submit">Enviar</button>
+            <textarea name="question" id="textBox" required></textarea>
+            <button type="submit" id="botãoEnviar">Enviar</button>
         </form>
+    </div>
         <div id="item-2-forms">
-            <img src="/assets/header.jpeg" alt="aquarium">
+            <img src="/assets/Peixe.jpg" alt="aquarium" id="fotoForms">
         </div>
 </section>
