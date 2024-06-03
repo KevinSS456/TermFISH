@@ -1,0 +1,67 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    position: relative;
+    padding: 0 5rem;
+    justify-content: left;
+    align-items: center;
+    height: 5rem;
+    background-color: #E0E0E0;
+}
+.menu_bar{
+    outline: none;
+    border: none;
+    background-color: #E0E0E0;
+    color: #6a6a6a;
+    font-size: 1.5rem;
+    font-family: 'Yanone Kaffeesatz';
+    cursor: pointer;
+}
+.menu_bar:hover{
+    color: #c72828;
+    text-decoration: underline #c72828;
+    transition: 1s;
+}
+#logo{
+    font-family: "Francois One";
+    font-size: 3vw;
+    margin-top: 1.5rem;
+    color: #3e3e3e;
+}
+#icon{
+    margin-left: 38rem;
+}
+#menu{
+    margin: 0 4rem;
+}
+
+
+#about_us{
+    margin-top: 4rem;
+    width: 60%;
+}
+#title{
+    font-size: 4.5vw;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 4px;
+    text-align: center;
+    color: #3e3e3e;
+
+}
+#sub{
+    font-size: 2vw;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 50px;
+}
+#aba{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
