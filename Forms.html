@@ -10,7 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
-    <script src="script.js" hover></script>
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "4HNw6SsHJ-5E_JwOL",
+            });
+        })();
+    </script>
     <title>Termfish</title>
 </head>
 <body>
@@ -18,7 +26,7 @@
     <nav>
         <h1 id="logo">TermFISH</h1>
         <div id="menu">
-            <a href="index.html"><button class="menu_bar">Início</button></a>
+             <a href="index.html"><button class="menu_bar">Início</button></a>
              <button class="menu_bar">Termometro</button>
              <a href="Forms.html"><button class="menu_bar">Contate-nos</button></a>
              <a href="about_us.html"><button class="menu_bar">Sobre Nos</button></a>
@@ -30,12 +38,12 @@
     <div id="headerforms">
         <p id="titleForms">Contate-nos</p>
     </div>
-        <form action="" method="post" id="FormArea">
+        <form id="FormArea">
             <label id="subtileForms">Mande suas duvidas ou comentários para a nossa equipe!</label>
-            <label for="Nome">Nome Completo:</label>
-            <input type="text" name="Nome" class="input">
+            <label for="name">Nome Completo:</label>
+            <input type="text" name="name" class="input" id="name">
             <label for="email">Email:</label>
-            <input type="email" name="Email" class="input" required>
+            <input type="email" name="email" id="email" class="input" required>
             <label for="question">Sua Pergunta:</label>
             <textarea name="question" id="textBox" required></textarea>
             <button type="submit" id="botãoEnviar">Enviar</button>
