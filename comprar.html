@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styleComprar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <script src="script_2.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "4HNw6SsHJ-5E_JwOL",
+            });
+        })();
+    </script>
+    <title>Termfish</title>
+</head>
+<body>
+<header>
+    <nav>
+        <h1 id="logo">TermFISH</h1>
+        <div id="menu">
+             <a href="index.html"><button class="menu_bar">Início</button></a>
+             <a href="termometro.html"><button class="menu_bar">Termometro</button></a>
+             <a href="Forms.html"><button class="menu_bar">Contate-nos</button></a>
+             <a href="about_us.html"><button class="menu_bar">Sobre Nos</button></a>
+        </div>
+    </nav>
+</header>
+<section id="conteinerForms">
+    <div id="item-1-forms">
+    <div id="headerforms">
+        <p id="titleForms">Orçamento</p>
+    </div>
+        
+        <form id="FormArea">
+
+            
+            <div>
+                
+                <label for="name">Nome:</label>
+                <input type="text" name="name" class="input" id="name">
+            </div>
+            <div>
+                <label for="name">Telefone:</label>
+                <input type="tel" name="name" class="input" id="tel">
+            </div>
+            <div id="email_content">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="input" required>
+            </div>
+            <div id="endereco_content">
+                <label for="name">Endereço:</label>
+                <input type="text" name="name" class="input" id="endereco">
+            </div>
+            <div id="qnt_content">
+                <label for="name">Qnt:</label>
+                <input type="number" name="name" class="input" id="qnt" placeholder="1">
+            </div>
+
+            <div id="valor_content">
+                <p id="valortotal">Total = R$49.99</p>
+            </div>
+            <button type="submit" id="botãoEnviar">Enviar</button>
+        </form>
+    </div>
+</section>
