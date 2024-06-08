@@ -22,9 +22,18 @@ document.getElementById('FormArea').addEventListener('submit', function(event) {
     emailjs.send('service_c6randq', 'template_g78fnm9', templateParams)
         .then((response) =>{
            console.log('SUCCESS!', response.status, response.text)
-           alert('Mensagem enviada com sucesso!')
+           alert('Orçamento enviado com sucesso!')
         }, (error) =>{
            console.log('FAILED...', error)
            alert('Ocorreu um erro ao enviar a mensagem.')
         })
+})
+document.getElementById('qnt').addEventListener('change', function(event) {
+
+    const total = document.getElementById('valor')
+    const quantia = document.getElementById('qnt').value
+    
+    total.innerText = parseInt(quantia*49.99)+".99"
+
+    
 })
