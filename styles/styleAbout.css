@@ -39,7 +39,19 @@ nav{
     margin: 0 4rem;
 }
 
-
+a {
+  cursor: pointer;
+  text-decoration: none;
+  margin: none;
+}
+.devs a{
+  color: rgb(220, 148, 115);
+}
+.devs :hover{
+  transition: 1s;
+  color: rgb(119, 199, 199);
+  
+}
 #about_us{
     margin-top: 4rem;
     width: 70%;
@@ -54,7 +66,7 @@ nav{
     font-weight: 400;
 
 }
-#sub{
+.sub{
     font-size: 2vw;
     font-family: 'Yanone Kaffeesatz';
     letter-spacing: 2px;
@@ -80,7 +92,7 @@ nav{
     height: 100%;
     object-fit:cover;
   }
-  #we{
+  .we{
     font-family: 'Yanone Kaffeesatz';
     letter-spacing: 4px;
     text-align: center;
@@ -92,6 +104,7 @@ nav{
   }
   .imgs{
     display: flex;
+    justify-content: center;
   }
   .devs{
 
@@ -106,7 +119,18 @@ nav{
     font-family: 'Yanone Kaffeesatz';
   }
   .cag{
-    color: #c72828;
     font-family: "Francois One";
 
   }
+  .val_img{
+    width: 10rem;
+  }
+  .vals{
+    cursor: pointer;
+    margin: 3rem;
+    text-align: center;
+    font-size: 2vw;
+    color: gray;
+    font-family: 'Yanone Kaffeesatz';
+  }
+  
