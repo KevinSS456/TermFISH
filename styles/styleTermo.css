@@ -8,14 +8,14 @@ nav{
     position: relative;
     padding: 0 5rem;
     justify-content: left;
-    background-color: rgb(255, 255, 255);
     align-items: center;
     height: 5rem;
+    background-color: #E0E0E0;
 }
 .menu_bar{
     outline: none;
-    background-color: white;
     border: none;
+    background-color: #E0E0E0;
     color: #6a6a6a;
     font-size: 1.5rem;
     font-family: 'Yanone Kaffeesatz';
@@ -37,4 +37,111 @@ nav{
 }
 #menu{
     margin: 0 4rem;
+}
+
+#ConteinerTermo{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% auto;
+    grid-template-rows: auto auto;
+    gap: 5px;
+}
+#imagemArea{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+}
+#imgTermInicio{
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 6px;
+}
+#item-2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+#tituloTermo{
+    font-size: 35px;
+    font-family: "Francois One";
+    letter-spacing: 2px;
+}
+#explicaTermo{
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 2px;
+    text-align: justify;
+    width: 700px;
+    font-size: 25px;
+}
+#cliqueTermo{
+    font-size: 20px;
+    font-family: "Francois One";
+    letter-spacing: 2px;
+    margin-top: 7px;
+}
+.btn {
+	border: none;
+	font-family: 'Arial Black';
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 30px;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-weight: 800;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+.btn-1 {
+	border: none;
+	color: #fff;
+	background-color: #c72828;
+
+}
+.btn-1c:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	
+}
+
+.btn-1c:hover,
+.btn-1c:active {
+    background: none;
+    transition: 0.5s;
+}
+
+.btn-1c:hover:after,
+.btn-1c:active:after {
+	width: 100%;
+    background-color: #333333;
+    transition: 1.2s;
 }
